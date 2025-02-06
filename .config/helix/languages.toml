@@ -1,0 +1,27 @@
+# [language-server.cspell]
+# command = "cspell-lsp"
+# args = ["--stdio", "--dictionary", "/home/serafin/test.txt"]#"node_modules/@cspell/dict-es-es/Spanish.trie"]
+
+[[language]]
+name = "markdown"
+language-servers = [
+  { name = "ltex"},
+  { name = "marksman" },
+]
+file-types = ["md", "txt"]
+scope = "text.markdown"
+comment-tokens = ["-", "+", "*", "1.", ">", "- [ ]"]
+# formatter = { command = "dprint", args = ["fmt", "--stdin", "md"]}
+#formatter = { command = 'pnpm', args = ["exec", "prettier", "--config", "~/.prettierrc", "--parser", "markdown", "--write"] }
+formatter = { command = 'deno', args = ["fmt", "-", "--ext", "md", "--config", "/home/serafin/.config/deno/deno.json" ] }
+auto-format = true
+
+[language.auto-pairs]
+"_" = "_"
+'*' = '*'
+'¿' = '?'
+
+
+[language-server.ltex]
+command = "ltex-ls"
+config = { ltex.language = "es" }

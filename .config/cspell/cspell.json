@@ -1,0 +1,6 @@
+{
+  "import": [
+    "/usr/lib/node_modules/@cspell/dict-es-es/cspell-ext.json",
+    "/usr/lib/node_modules/@cspell/dict-la/cspell-ext.json"
+  ]
+}

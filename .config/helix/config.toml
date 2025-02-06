@@ -1,0 +1,17 @@
+theme = "catppuccin_mocha"
+
+[editor]
+line-number = "relative"
+text-width = 100
+cursorline = true
+cursorcolumn = true
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.soft-wrap]
+enable = true
+wrap-indicator = ""  # set wrap-indicator to "" to hide it
+wrap-at-text-width = true
