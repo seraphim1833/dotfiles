@@ -9,3 +9,9 @@ italic_font      auto
 bold_italic_font family='Iosevka Term Curly Slab' style='Heavy Italic'
 # END_KITTY_FONTS
 include dracula.conf
+
+
+# BEGIN_KITTY_THEME
+# Catppuccin Kitty Diff Mocha
+include current-theme.conf
+# END_KITTY_THEME
