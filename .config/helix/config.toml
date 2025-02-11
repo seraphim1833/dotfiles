@@ -5,6 +5,7 @@ line-number = "relative"
 text-width = 100
 cursorline = true
 cursorcolumn = true
+mouse = false
 
 [editor.cursor-shape]
 insert = "bar"
